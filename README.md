@@ -3,7 +3,6 @@
   <img src="https://raw.githubusercontent.com/hriday29/pathfinder-ai/main/public/pathfinder-ai-logo.png" alt="Pathfinder AI Logo" width="400"/>
 </p>
 
-<h1 align="center">🧭 Pathfinder AI</h1>
 <h3 align="center">Your Personal AI-Powered Modular Learning Path Builder</h3>
 
 <p align="center">
