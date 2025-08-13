@@ -1,6 +1,6 @@
 <!-- PROJECT LOGO & HEADER -->
 <p align="center">
-  <img src="https://img.icons8.com/color/96/compass.png" alt="Pathfinder AI Logo"/>
+  <img src="https://raw.githubusercontent.com/hriday29/pathfinder-ai/main/public/pathfinder-ai-logo.png" alt="Pathfinder AI Logo" width="400"/>
 </p>
 
 <h1 align="center">🧭 Pathfinder AI</h1>
