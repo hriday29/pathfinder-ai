@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!-- PROJECT LOGO & HEADER -->
+<p align="center">
+  <img src="https://img.icons8.com/color/96/compass.png" alt="Pathfinder AI Logo"/>
+</p>
 
-## Getting Started
+<h1 align="center">🧭 Pathfinder AI</h1>
+<h3 align="center">Your Personal AI-Powered Modular Learning Path Builder</h3>
 
-First, run the development server:
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-In%20Development-yellow?style=for-the-badge&logo=javascript" alt="status"/>
+  <img src="https://img.shields.io/badge/Framework-Next.js-black?style=for-the-badge&logo=next.js" alt="nextjs"/>
+  <img src="https://img.shields.io/badge/Styling-Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css" alt="tailwindcss"/>
+  <img src="https://img.shields.io/badge/Linting-ESLint-4B32C3?style=for-the-badge&logo=eslint" alt="eslint"/>
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📌 Overview
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+> **Note:** This project is **personal** and **proprietary**.  
+> It is **not** open for public contribution, reuse, or forking.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Pathfinder AI** is an experimental AI-driven web platform to create **dedicated, distraction-free learning paths** for any topic.  
+It allows you to **structure modular learning content**, embed **quizzes**, integrate **YouTube videos**, and track **progress** — all in one clean interface.
 
-## Learn More
+🛠 Currently **paused in development** due to other ongoing projects.  
+Expected to resume later with **more features** and **better AI integration**.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Core Idea & Vision
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Modular Learning Paths** – Break any skill into modules, lessons, and checkpoints.
+- **Built-in Quizzes** – Test understanding after each section.
+- **Video Integration** – Pull in curated YouTube videos into a separate, focused view.
+- **Zero Distractions** – Learners stay in a dedicated space without interference.
+- **AI Assistance** – Suggests resources and creates paths automatically (future).
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📂 Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Technology      | Purpose                                      |
+|-----------------|----------------------------------------------|
+| **Next.js**     | React framework for server/client rendering  |
+| **Tailwind CSS**| Utility-first styling                        |
+| **PostCSS**     | CSS transformations                          |
+| **ESLint**      | Code linting and quality checks              |
+| **JavaScript + TypeScript** | Hybrid setup for flexibility     |
+
+---
+
+## 📅 Development Status
+
+| Phase               | Status         |
+|---------------------|---------------|
+| Initial Setup       | ✅ Complete   |
+| UI Components       | 🛠 In Progress|
+| Core Logic          | ⏸ On Hold    |
+| AI Integration      | 🔜 Planned   |
+| Public Release      | ❌ Not Planned|
+
+---
+
+## ⚠️ Legal Notice
+
+> **Pathfinder AI** is a **private, proprietary project** owned by **Hriday Vig**.  
+> All rights reserved. **No part of this repository may be copied, forked, reproduced, or used in any form** without explicit, written permission from the owner.  
+> Unauthorized usage will be treated as a **violation of copyright law**.
+
+📜 **Custom Proprietary License:** This repository is **NOT** open-source.  
+The source code is visible for portfolio and transparency purposes **only**.
+
+---
+
+## 📌 Disclaimer
+
+This is an experimental project under development.  
+No guarantees are made regarding stability, availability, or correctness of any part of this application.
+
+---
+
+## 🚫 Contribution Policy
+
+This is **not** an open-source project.  
+Pull requests, issues, or forks from the public will **not** be accepted.
+
+---
+
+## 📅 Roadmap (High-Level)
+
+- [ ] Resume development in next cycle
+- [ ] Implement AI-assisted learning path generator
+- [ ] Launch closed beta for select testers
+- [ ] Improve UI/UX for mobile
+- [ ] Integrate gamification features
+
+---
+
+## 📬 Contact
+
+**Hriday Vig**  
+📧 Email: *(private)*  
+🌐 GitHub: [@hriday29](https://github.com/hriday29)
+
+---
+
+<p align="center">© 2025 Hriday Vig — All Rights Reserved.</p>
