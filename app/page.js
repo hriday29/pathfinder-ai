@@ -1,15 +1,17 @@
 "use client";
 
 import { useState } from 'react';
-import { useRouter } from 'next/navigation'; // Import the router
+import { useRouter } from 'next/navigation';
 import Header from "../components/Header";
+import RecentPaths from "../components/RecentPaths";
 import { motion } from "framer-motion";
+import StatsCard from '../components/StatsCard';
+import ContinueLearningCard from '../components/ContinueLearningCard';
 
 export default function Home() {
   const [topic, setTopic] = useState('');
   const [loading, setLoading] = useState(false);
-  // The aiResponse state is no longer needed on this page
-  const router = useRouter(); // Initialize the router
+  const router = useRouter();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -29,24 +31,21 @@ export default function Home() {
         throw new Error(data.error || "Something went wrong.");
       }
       
-      console.log("Backend Response:", data);
-      
-      // Redirect to the new path page instead of showing an alert
-      // The pathId is returned from our API upon successful creation
       router.push(`/path/${data.pathId}`);
 
     } catch (error) {
       console.error("Submission error:", error);
       alert(`Error: ${error.message}`);
-      setLoading(false); // Make sure to stop loading on error
+      setLoading(false);
     }
-    // On success, the user is navigated away, so no need to set loading to false here.
   };
 
   return (
     <div className="text-white flex flex-col min-h-screen antialiased overflow-x-hidden">
       <Header />
-      <main className="flex-grow grid grid-cols-1 md:grid-cols-2 gap-8 container mx-auto p-4 sm:p-6 items-center">
+      <main className="flex-grow grid grid-cols-1 md:grid-cols-2 gap-8 container mx-auto p-4 sm:p-6 items-start">
+        
+        {/* --- COLUMN 1: HERO & FORM --- */}
         <motion.div 
           className="flex flex-col items-start text-left"
           initial={{ opacity: 0, x: -50 }}
@@ -86,16 +85,14 @@ export default function Home() {
             </div>
           </form>
         </motion.div>
-        <motion.div 
-          className="hidden md:flex flex-col h-[600px] bg-white/5 border border-white/10 rounded-2xl shadow-lg backdrop-blur-sm p-8 overflow-y-auto"
-        >
-          <div className="w-full">
-            <h2 className="text-2xl font-bold mb-6 text-zinc-200 sticky top-0 bg-white/5 backdrop-blur-sm py-2">Your Path Awaits</h2>
-            <div className="text-center text-zinc-400 pt-16">
-                 <p>Your personalized curriculum will appear here after generation.</p>
-            </div>
-          </div>
-        </motion.div>
+
+        {/* --- COLUMN 2: THE ENTIRE DASHBOARD --- */}
+        <div className="flex flex-col gap-8">
+          <StatsCard />
+          <ContinueLearningCard />
+          <RecentPaths />
+        </div>
+
       </main>
       <footer className="p-4 sm:p-6 text-center text-zinc-600 text-sm z-10 container mx-auto">
         <p>&copy; 2025 Pathfinder AI. All Rights Reserved.</p>
